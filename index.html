@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильтр-бегунок двойной</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1 class="filter__title">Фильтр-бегунок</h1>
+        <form class="filter" id="filter-price">
+            <fieldset class="filter__item">
+                <legend class="filter__legend-price">Стоимость:</legend>
+                <div class="filter__range">
+                    <div class="filter__controls-wrap">
+                        <div class="filter__controls" id="controls">
+                            <div class="filter__scale">
+                                <div class="filter__bar"></div>
+                            </div>
+                            <div class="filter__toggle filter__toggle--min"></div>
+                            <div class="filter__toggle filter__toggle--max"></div>
+                        </div>
+                    </div>
+                    <div class="filter__price" id="label">
+                        <div class="filter__wrapper-label">
+                            <label class="filter__label filter__label--min">от<input
+                                    class="filter__input filter__input--min" type="test" name="minPrice"
+                                    required></label>
+                            <p class="filter__error filter__error--min"></p>
+                        </div>
+                        <div class="filter__wrapper-label">
+                            <label class="filter__label filter__label--max">до<input
+                                    class="filter__input filter__input--max" type="text" name="maxPrice"
+                                    required></label>
+                            <p class="filter__error filter__error--max"></p>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <button class="filter__button" type="submit">Показать</button>
+        </form>
+    </div>
+    <script src="util.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
